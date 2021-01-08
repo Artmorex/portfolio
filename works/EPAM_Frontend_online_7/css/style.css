@@ -1,0 +1,13 @@
+.coral{
+	background-color: coral;
+}
+
+.coral:hover{
+	background-color: lightcoral;
+}
+
+html{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+    padding: 0;
+}

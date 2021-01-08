@@ -1,0 +1,146 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dbfff3;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  stroke: transparent;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.node text.root {
+  transform: rotate(-90deg);
+}
+
+.node text.root2 {
+  transform: rotate(-90deg);
+}
+
+.link {
+  fill: none;
+  stroke: #383838;
+  stroke-width: 1.3px;
+}
+
+.row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.content-box {
+	width: 50%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto; 
+  padding-bottom: 70px;
+}
+
+main {
+	padding: 40px 0 20px;
+}
+
+.graphic-2 {
+  margin-top: -100px;
+}
+
+.blue-title {
+	margin: 1em 0;
+	font-weight: bold;
+	font-size: 28px;
+	display: block;
+  text-transform: uppercase;
+	color: var(--blue);
+	border-bottom: 3px solid var(--blue);
+	padding-bottom: 5px;
+}
+
+.second-title {
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+  text-transform: uppercase;
+  color: #851718;
+  border-bottom: 3px solid #851718;
+  padding-bottom: 5px;
+}
+
+.title-desc {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  color: #999999;
+  border-bottom: 3px solid #999999;
+  padding-bottom: 5px;
+}
+
+.main-desc {
+  font-size: 16px;
+  display: block;
+  color: #999999;
+  font-style: italic;
+}
+
+.list-item {
+	margin: 5px 0;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+	padding: 5px 0;
+  text-indent: -5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+span.bold {
+	font-weight: 600;
+}
+ul.dashed > li:before {
+  content: "-";
+  padding-right: 5px;
+  position: relative;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  align-items: stretch;
+}
+
+.graphic-3{
+	margin-left: 40px;
+}

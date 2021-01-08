@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Fight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+    <header>
+        <div id="pickachu_winning">
+            <canvas id="canvas"></canvas>
+        </div>
+        <img class="logo"
+             title="Reset Game"
+             src="./assets/Pokemon_logo.png"
+             alt="Pokemon">
+    </header>
+    <div class="playground">
+        <div class="pokemon character">
+            <p class="heartLine"></p>
+            <span class="lvl">Lv. 1</span>
+            <img src="assets/person/pikachu_icon.png" class="sprite">
+            <div class="details">
+                <h2 class="name" id="name-character">
+                    Pikachu
+                </h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-character" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-character">100 / 100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+        <div class="control bounce-2">
+            <button class="button" id="btn-kick">
+                Random damage
+            </button>
+        </div>
+
+        <div class="none bounce-2" id="kick-bonus">
+            <button class="button" id="btn-kick-bonus">
+                Bonus strike
+            </button>
+        </div>
+        </div>
+
+        <div class="pokemon enemy">
+            <span class="lvl">Lv. 1</span>
+            <img src="assets/person/charmander_icon.png" class="sprite">
+            <div class="details">
+                <h2 class="name" id="name-enemy">
+                    Charmander
+                </h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-enemy" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-enemy">100 / 100</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <p id="modal-text"></p>
+    </div>
+    <div class="modal-footer">
+      <h3>ฅ(•ㅅ•❀) ฅ</h3>
+    </div>
+  </div>
+
+</div>
+
+<div class="alert" id="textBox">
+    <span id="textFight"></span>
+</div>
+
+<div class="catch_screen"></div>
+
+<script src="jQuery.min.js"></script>
+<script src="main.js"></script>
+<script src="canvas.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+body{
+  margin: 0px;
+  padding: 0px; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vw;
+}
+
+h1, h2{
+  font-weight: 300;
+  padding: 0vh 1vw;
+  margin: 0px;
+}
+
+.header{
+  background-color: #99ccff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar{
+  padding: 2.5vw;
+}
+
+.navbar a{
+  padding: 2.5vw;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.header a:hover{
+  background-color: #587ca6; 
+}
+
+.logo{
+  padding: 2vh 2vw 2vh 4vw ;
+  color: white;
+  font-size: 1.9em;
+  font-weight: 100;
+}
+
+.logo_blog{
+  color: #162b4d;
+}
+
+.postheading{
+  background-image: url("../img/section1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.postheading_text{
+  padding: 1vh 1vw;
+  font-weight: 400;
+  font-size: .73em;
+}
+
+main{
+  float: left;
+  width: 60%;
+  padding-left: 2%;
+  color: #484848;
+}
+
+main article{
+  display: flex;
+}
+
+main article:hover>.post_text{
+  opacity: 0.5;
+}
+
+main article:hover>.post_time{
+  opacity: 0.5;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.photo{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thumbnail{
+  width: 100%;
+}
+
+aside{
+  float: right;
+  width: 34%;
+  padding-right: 2%;
+  padding-bottom: 4%;
+  line-height: 1.6;
+}
+
+aside article{
+  border: 1px black solid;
+  margin-bottom: 3vh;
+}
+
+aside .post_text{
+  padding: 7%;
+}
+
+aside .post_text h2{
+  padding-bottom: 7%;
+}
+
+aside button{
+  background-color: white;
+  margin-left: 1vw;
+  margin-top: 1vh;
+  padding: 0.5vw;
+  border: 2px solid grey;
+  font-size: 0.65em;
+  font-weight: 100;
+  margin: 0% 7% 7% 7%;
+}
+
+aside button:hover{
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+
+footer{
+  clear: both;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #162b4d;
+  color: white;
+  font-weight: 100;
+  font-size: 1vw;
+  line-height: 1.5em;
+  white-space: pre-line;
+}
+
+.footer_copyright{
+  padding: 3vh;
+}
+
+.footer_name{
+  padding: 3vh;
+}
+
+button{
+  text-transform:uppercase;
+}
+
+.post_text{
+  font-size: 0.75em;
+  font-weight: 300;
+  padding: 2% 3%;
+  line-height: 1.5;
+}
+
+.post_text h2{
+  padding: 1vh 0vw 2vh 0vw;
+  font-size: 2.1em;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.post_right{
+  order: -2;
+  text-align: left;
+}
+
+.post-1 {
+  background: #F3D250;
+}
+.post-2 {
+  background: #8D8741;
+  text-align: right;
+}
+.post-3 {
+  background: #659DBD;
+}
+.post-4 {
+  background: #DAAD86;
+  text-align: right;
+}
+
+.post_time{
+  font-weight: 100;
+  font-size: 1.8em;
+  padding: 7% 4%;
+  line-height: 1;
+}
+
+.post_time span{
+  font-size: .7em;
+}
+
+.sandwich_menu div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .navbar{
+    display: none;
+  }
+  .sandwich_menu div{
+    display: block;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .sandwich_menu{
+    margin: 10px 0px 40px 0px;
+    order: -1;
+  }
+  h1{
+    font-size: 50px;
+  }
+  .logo{
+    font-size: 50px;
+  }
+  body{
+    font-size: 30px;
+  }
+  aside{
+    width: 30%;
+  }
+  main{
+    width: 63%;
+    padding-bottom: 40px;
+  }
+  .wrapper{
+    grid-template-columns: 100%;
+  }
+  main article {
+    display: block;
+  }
+  .post_time{
+    width: fit-content;
+    margin: auto;
+  }
+  footer{
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
+  }
+  .footer_copyright{
+    padding-bottom: 0px;
+  }
+  .footer_name{
+    padding-top: 0px;
+  }
+  .post-2, .post-4{
+    text-align: center;
+  }
+  .order1{
+    order: 1;
+  }
+  .order2{
+    order: 2;
+  }
+  .order3{
+    order: 3;
+  }
+  .order4{
+    order: 4;
+  }
+  .order5{
+    order: 5;
+  }
+  .order6{
+    order: 6;
+  }
+  .order7{
+    order: 7;
+  }
+  .order8{
+    order: 8;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main{
+    width: 95%;
+  }
+  aside{
+    width: 95%;
+  }
+}

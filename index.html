@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Artem Zhiliaiev</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet/less" href="bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="styles/resetCSS.css">
+	<link rel="stylesheet/less" type="text/css" href="styles/main.less">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/filter-animations.css">
+	<link rel="stylesheet" href="styles/image-animations.css">
+</head>
+<body>
+
+	<div class="main-wrapper">
+	    <header class="header">
+	      	<div class="logo-text">
+		        <p>
+			    	Hello world.
+			        Here presented some of my practical works which has been done during my studying and growing
+			        as a front-end developer. I'll appreciate any comments to code and feel free to contact me via <a href="#form">form</a>.
+		        </p>
+	      	</div>
+		    <div class="logo hvr-float">
+				<img class="pic" src="images/coder.png">
+				<p>
+					<a href="">Artem Zhiliaiev</a>
+				</p>
+		    </div>
+	    </header>
+
+	    <div class="separator"></div>
+
+	    <article class="works">
+			<div class="works-header require-filter">
+				<span class="title">
+					<img class="tube" src="images/coder.png">
+					<h3 >My works</h3>
+				</span>
+			</div> <!-- end works-header -->
+			<div class="works-content require-works">
+			</div> <!-- end works-content -->
+	    </article>  <!-- end works -->
+
+	    <div class="separator"></div>
+
+	    <article class="works">
+			<h3 class="title">Send me message and I will give your answer ASAP</h3>
+			<div id="form">
+				<div class="fish" id="fish"></div>
+				<div class="fish" id="fish2"></div>
+
+				<form id="waterform" method="post">
+
+					<div class="formgroup" id="name-form">
+						<label for="name">Your name*</label>
+						<input type="text" id="name" name="name" />
+					</div>
+
+					<div class="formgroup" id="email-form">
+						<label for="email">Your e-mail*</label>
+						<input type="email" id="email" name="email" />
+					</div>
+
+					<div class="formgroup" id="message-form">
+						<label for="message">Your message</label>
+						<textarea id="message" name="message"></textarea>
+					</div>
+
+					<input type="submit" value="Send your message!" />
+				</form>
+
+			</div>
+	    </article>
+	    
+	    <div class="separator separator-buttom"></div>
+
+	    <footer>
+			<div class="footer-content">
+				<span class="copyright"><i class="fa fa-copyright"></i> 2020 Zhiliaiev Artem</span>
+				<span class="links">
+					<a href="https://www.linkedin.com/in/artem-zhiliaiev-20832913a/"><i class="fa fa-github"></i></a>
+					<a href="https://github.com/ArtemZapp/"><i class="fa fa-linkedin-square"></i></a>
+				</span>
+			</div>
+	    </footer>
+
+	</div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>

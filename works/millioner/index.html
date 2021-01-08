@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW_8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<div class="container">
+			<button class="btn" id="startGame" onclick="startNewGame()">
+				Start new game
+			</button>
+			<button class="btn skipQuestion" id="nextQuestion" onclick="skipQuestion()">
+				Skip question
+			</button>
+		</div>
+		<div id="game">
+			<div class="question" id="question">
+			</div>
+			<div class="answers-box">
+				<button class="ans" id="ans_1" onclick="check(0)"></button>
+				<button class="ans" id="ans_2" onclick="check(1)"></button>
+				<button class="ans" id="ans_3" onclick="check(2)"></button>
+				<button class="ans" id="ans_4" onclick="check(3)"></button>
+			</div>
+			<div class="result">
+				<div class="total" id="total">
+				</div>
+				<div class="current" id="current">
+				</div>
+			</div>
+		</div>
+	</main>
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

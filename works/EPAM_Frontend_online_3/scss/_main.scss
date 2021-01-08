@@ -1,0 +1,275 @@
+//@import "variables1";
+@import "variables2";
+
+@mixin button {
+	width: 110px;
+	height: 40px;
+	background-color: map-get($colors,button_color);
+	border: none;
+	color: map-get($colors, white);
+	border-radius: 2px;
+	font-size: 14px;
+}
+
+@mixin link {
+  color: map-get($colors, white);
+}
+
+*{
+	margin: 0px;
+	font-family: map-get($fonts, font_1);
+	letter-spacing: 0.2px;
+}
+
+body{
+	background: $contentBackground;
+}
+
+a{
+	@include link;
+}
+
+.header{
+	&-wrap{
+		display: flex;
+	    flex-direction: column;
+	    border-bottom-right-radius: 600px 200px;
+		border: none;
+		background: $background;
+		background-size: cover;
+		height: 577px;
+
+		div:not(.landing-logo){
+			font-size: 16px;
+			margin-top: 50px;
+			margin-left: 155px;
+
+			.login{
+				padding-left: 120px;
+				color: map-get($colors, white);
+				font-size: 15px;
+			}
+		}
+	}
+
+	&_heading:before{
+	    content: "awesome";
+	    position: absolute;
+	    top: 170px;
+	    left: 150px;
+	    background-color: map-get($colors, epam_blue);
+	}
+
+	&_text{
+		font-family: map-get($fonts, font_2);
+		font-size: 0.8em;
+		margin-top: 25px;
+		margin-left: 150px;
+		width: 550px;
+		color: map-get($colors,text_dark_color);
+		line-height: 1.5;
+		display: block;
+		white-space: pre-line;
+		letter-spacing: 0.2px;
+	}
+
+	&_button{
+		@include button;		
+	}
+
+	&_heading{
+		font-size: 58px;
+		line-height: 1;
+		color: map-get($colors,text_dark_color);
+		margin-top: 60px;
+		margin-left: 150px;
+		width: 500px;
+		font-weight: 800;
+	}
+}
+
+.landing-logo{
+	margin-top: 15px;
+	padding-left: 150px;
+	display: flex;
+	width: 150px;
+	text-align: center;
+	color: map-get($colors,text_dark_color);
+
+	img{
+		padding-top: 4px;
+		padding-left: 2px;
+		width: 36px;
+		height: 36px;
+	}
+
+	p{
+		padding-top: 8px;
+		margin-left: 7px;
+	    display: flex;
+	    flex-direction: column;
+	    font-size: 20px;
+	    padding-left: 5px;
+	    font-weight: 600;
+		font-family: map-get($fonts, font_2);
+		line-height: 15px;
+
+	    span{
+			font-family: map-get($fonts, font_2);
+			font-size: 8px;
+		}
+	}
+}
+
+.section{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_text{
+		color: map-get($colors,text_dark_color);
+		margin: auto;
+		font-size: 34px;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		font-weight: 600;
+		width: 650px;
+
+			&:before{
+			    content: "adventure";
+			    position: relative;
+			    left: 339px;
+			    background-color: map-get($colors, epam_blue);
+			}
+	}
+
+	&_card_wrap{
+		@extend .section;
+	}
+
+	&_card{
+		background-color: map-get($colors, section);
+		width: 870px;
+		height: 235px;
+		padding: 10px;
+		margin: auto;
+		margin-top: 20px;
+		border-radius: 5px;
+
+		&_right_container{
+		    width: 55%;
+			float: right;
+			padding: 20px;
+			text-align: center;
+		}
+
+		&_heading{
+			font-size: 20px;
+			text-align: center;
+			padding-top: 20px;
+			color: map-get($colors, white);
+		}
+
+		&_text{
+			font-size: 13px;
+			text-align: justify;
+			padding: 30px 50px 20px 50px;
+			line-height: 1.5;
+			color: map-get($colors,text_bright_color);
+			font-family: map-get($fonts, font_2);
+		}
+
+		&_img{
+			width: 350px;
+			float: left;
+		}
+	}
+
+	&_link{
+		font-size: 13px;
+		color: map-get($colors,text_bright_color);
+	}
+
+	&_banner{
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		width: 950px;
+		height: 120px;
+		margin-top: 130px;
+		background: linear-gradient(90deg, $gradient_1, $gradient_2);
+		border-radius: 5px;
+
+		&_text_wrap{
+			margin: auto;
+			padding-bottom: 20px;
+			padding-left: 20px;
+		}
+			&_heading{
+				font-size: 23px;
+				font-weight: 900;
+				color: map-get($colors,text_dark_color);
+				padding-bottom: 10px;
+
+				&:after{
+				    content: "start";
+				    position: relative;
+				    left: -230px;
+				    background-color: map-get($colors, epam_blue);
+				}
+			}
+
+			&_text{
+				color: map-get($colors,text_bright_color);
+				font-size: 13px;
+			}
+
+		&_button{
+			margin: auto;
+			@include button;
+		}
+	}
+}
+
+.footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: map-get($colors, section);
+	padding-top: 50px;
+	margin-top: -60px;
+	z-index: -1;
+	color: map-get($colors,text_bright_color);
+	font-family: map-get($fonts, font_2);
+
+	&_logo{
+		padding: 0px;
+		margin: 0px;
+
+		p{
+			color: map-get($colors,text_bright_color);
+		}
+	}
+
+	&-wrap{
+		display: flex;
+		justify-content: space-around;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	&_text{
+		font-size: 12px;
+		line-height: 1.5;
+		width: 250px;
+		letter-spacing: 0.2px;
+		font-family: map-get($fonts, font_2);
+	}
+
+	&-cr{
+		font-size: 14px;
+		padding-top: 15px;
+		padding-left: 20px;
+		font-family: map-get($fonts, font_2);
+	}
+}

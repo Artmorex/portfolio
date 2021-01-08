@@ -1,0 +1,138 @@
+.tm-quote{
+	font-size: 1.1em;
+}
+
+.tm-md-flex-center .tm-quote{
+	font-style: normal;
+    font-size: 1em;
+    margin-bottom: 40px; 
+}
+
+.tm-flex-center.tm-flex-col p{
+	font-size: 17px;
+}
+
+.tm-md-flex-center{
+	font-size: 17px;
+}
+
+section.tm-card:hover{
+	color: #9fdce4;
+}
+
+section.tm-card:hover:not(.tm-col-md-reverse)::before{
+	content: '';
+	top: 0;
+	right: 0;
+	position: absolute;
+    border-top: 80px solid #76cdd8;
+    border-left: 80px solid transparent;
+}
+
+section.tm-card.tm-col-md-reverse:hover::before{
+	content: '';
+	top: 0;
+	left: 0;
+	position: absolute;
+    border-top: 80px solid #76cdd8;
+    border-right: 80px solid transparent;
+}
+
+.tm-flex-center.p-5.tm-bg-color-primary{
+	background-color: #76ccd8;
+}
+
+.tm-col-md-reverse{
+	flex-direction: row-reverse;
+}
+
+.btn{
+	background-color: #119898;
+	border-color: #119898;
+}
+
+.btn.btn-primary:hover{
+	background-color: rgb(118, 205, 216);
+	border-color: rgb(118, 205, 216);
+}
+
+.tm-text-color-primary{
+	color: #9fdce4;
+}
+
+.tm-mb-30{
+	margin-bottom: 30px; 
+}
+
+.img-fluid{
+	transition: transform .2s;
+}
+
+.img-fluid:hover{
+	transform: scale(1.1); 
+}
+
+.tm-pricing-table{
+	border-color: #119898; 
+}
+
+.tm-pricing-table:hover{
+	box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+.pl-xl-0 .tm-pricing-table:hover{
+	height: 31em;
+}
+
+.tm-bg-color-secondary{
+	background-color: #119898;
+}
+
+.btn.btn-secondary{
+	background-color: #119898;
+	border-color: #119898;
+}
+
+.btn.btn-secondary:hover{
+	background-color: #24d4d4;
+	border-color: #24d4d4;
+}
+
+.tm-pricing-table:hover .tm-pricing-discount{
+	display: block;
+}
+
+.tm-pricing-table:hover .btn.btn-secondary{
+	background-color: #24d4d4;
+	border-color: #24d4d4;
+}
+
+.tm-pricing-discount__star{
+	color: red;
+}
+
+.tm-pricing-discount__text{
+	color: #24d4d4;
+}
+
+.tm-contact-form{
+    z-index: 1;
+    margin-top: -3em;
+    margin-bottom: -3em;
+}
+
+.tm-form-header{
+	background-color: #24d4d4;
+}
+
+.form-group:focus{
+	border-color: #24d4d4; 
+	box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+.form-group>input:focus,
+.form-group>select:focus,
+.form-group>textarea:focus {
+    border-color: #24d4d4;
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+}

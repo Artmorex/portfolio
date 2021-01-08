@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0 0 5vh;
+}
+
+.current-month{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.calendar-header{
+  display: inline-grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-gap: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.calendar{
+  display: inline-grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+.calendar div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wrapper{
+  display: grid;
+  justify-content: center;
+}
+
+.cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:hover{
+  background-color: #ffebf5;
+  border: 1px solid pink;
+  cursor: pointer;
+}
+
+.header-cell{
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.current-cell{
+  background-color: lightgrey;
+}
+
+.last-cell{
+  border: 1px solid lightgrey;
+}

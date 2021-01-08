@@ -1,0 +1,20 @@
+$contentBackground: #fff;
+
+$fonts :(
+    font_1: ('Source Sans Pro', sans-serif),
+    font_2: ('Hind', sans-serif)
+);
+
+$colors :(
+	epam_blue: #14a0c7, 
+	text_dark_color: #2c2f3c, 
+	button_color: #699900,
+	text_bright_color: #c0b4af,
+	white: #fff,
+	section: #21232e
+);
+
+$gradient_1: rgba(102,150,9,1);
+$gradient_2: rgba(45,91,218,1);
+
+$background: (url("../img/m-h-day.jpg") center no-repeat);
