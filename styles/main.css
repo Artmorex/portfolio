@@ -2,12 +2,16 @@ body {
   height: 100%;
   width: 100%;
 }
+a {
+  text-decoration: none;
+  color: #181818;
+}
 .main-wrapper {
   margin: 0px auto;
   width: 93.75%;
   height: 100%;
   max-width: 960px;
-  font: normal 100% sans-serif;
+  font-family: 'Roboto Slab', serif;;
   text-decoration: none;
 }
 .header {
@@ -17,31 +21,28 @@ body {
 }
 .header .logo {
   display: inline-block;
-  line-height: 70px;
+  line-height: 1.1em;
   vertical-align: middle;
-  font-family: 'Kaushan Script', cursive;
+  /* font-family: 'Kaushan Script', cursive; */
   color: #181818;
   font-size: 1.9em;
   cursor: pointer;
 }
-.header .logo p {
-  display: flex;
-  justify-content: center;
-}
 .header{
   display: flex;
   justify-content: space-between;
-  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
-  font-size: 0.9em;
+  font-size: 1.4em;
+  line-height: 1.1em;
 }
 .works .works-header {
   padding-bottom: 1%;
   margin: 1%;
-  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #666666;
 }
 .works .works-header .title {
-  float: left;
+  display: flex;
+  justify-content: center;
 }
 .works .works-header .title .tube {
   height: 1.6em;
@@ -51,15 +52,11 @@ body {
   display: inline-block;
   color: #4F4640;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding-left: 10px;
-  position: relative;
-  top: -3px;
+  
 }
 .works .works-header .filter {
-  float: right;
-  padding: 5px 0px 0px 0px;
   letter-spacing: 0.1em;
+  padding: 20px;
 }
 .works .works-header .filter li {
   display: inline-block;
@@ -87,16 +84,11 @@ body {
   margin: 0 auto;
   padding-top: 3%;
 }
-.works-content .item-wrapper .description a {
-  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
-  color: inherit;
-  text-decoration: none;
-}
 .works-content .item-wrapper .description a h5 {
   font-size: 1.5em;
 }
 .works-content .item-wrapper .description .tags {
-  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  /* font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif; */
   padding-top: 1%;
 }
 .works-content .item-wrapper .description .tags .fa {
@@ -112,9 +104,9 @@ footer {
 }
 footer .footer-content .copyright {
   float: left;
-  font-size: 0.5em;
+  font-size: 0.85em;
   line-height: 40px;
-  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+  /* font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif; */
 }
 footer .footer-content .links a {
   float: right;
@@ -128,11 +120,11 @@ footer .footer-content .links a:hover {
 }
 .main-wrapper .separator-buttom {
   margin-bottom: 1%;
-  margin-top: 0;
+  margin-top: 1em;
 }
 .separator {
   background: url("../images/pattern_06.png") repeat-x scroll left bottom transparent;
-  min-height: 10px;
+  min-height: 7px;
   margin: 4% 1% 3% 1%;
 }
 @media screen and (max-width: 850px) {
@@ -211,7 +203,6 @@ footer .footer-content .links a:hover {
 	70% {margin-left: 100%;}
 	100% {margin-left: 100%;}
 }
-
 .fish{
 	background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
 	width: 235px;
@@ -225,17 +216,14 @@ footer .footer-content .links a:hover {
 	animation-timing-function: linear;
 	-webkit-animation-timing-function: linear;
 }
-
 #fish{
 	top: 120px;
 }
-
 #fish2{
 	top: 260px;
 	animation-delay: 12s;
 	-webkit-animation-delay: 12s;
 }
-
 #form{
 	height: 100%;
 	overflow: hidden;
@@ -256,7 +244,7 @@ input, textarea{
 	border-radius: 20px;
 	outline: none;
 	padding: 10px;
-	font-family: 'Sniglet', cursive;
+	/* font-family: 'Sniglet', cursive; */
 	font-size: 1em;
 	color: #676767;
 	transition: border 0.5s;
@@ -272,7 +260,6 @@ input, textarea{
 input:focus, textarea:focus{
 	border: solid 3px #77bde0;	
 }
-
 textarea{
 	height: 100px;	
 	resize: none; 
@@ -285,7 +272,6 @@ input[type="submit"]{
 	cursor: pointer;
 	margin-top: 30px;
 	font-size: 1.29em;
-	font-family: 'Sniglet', cursive;
 	-webkit-transition: background-color 0.5s;
 	-moz-transition: background-color 0.5s;
 	-o-transition: background-color 0.5s;
@@ -311,7 +297,6 @@ label{
 	width: 566px;
 	padding-top: 2px;
 }
-
 .formgroup{
 	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
 }
@@ -323,5 +308,5 @@ label{
 	color: red;
 }
 .pic{
-  width: 10em;
+  width: 100%;
 }

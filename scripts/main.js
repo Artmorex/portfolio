@@ -2,7 +2,7 @@
 
 	var FILTER_LIST_SELECTOR = '.filter';
 	var ACTIVE_FILTER_SELECTOR = '.active';
-	
+
 	function Gallery(requireFilter, requireWorks, worksList) {
 		this.requireFilter = requireFilter;
 		this.requireWorks = requireWorks;
@@ -11,7 +11,7 @@
 		this.visibleWorksId = []; 
 		this.hiddenWorksId = []; 
 		this.allTags = [];
-		
+
 		this._buildFilerAndWorkHTML(this.requireFilter, this.requireWorks, this.worksList);
 
 		this.updateModel("All"); 
@@ -37,7 +37,7 @@
 			$('#' + value).fadeOut("fast");
 		});		
 	};
-	
+
 	Gallery.prototype.updateModel = function (tag) { // model
 		var _this = this;
 		_this.visibleWorksId = [];
@@ -67,7 +67,7 @@
 
 	Gallery.prototype._buildFilerAndWorkHTML = function ($filterTargetNode, $worksTargetNode, worksList) {
 		var _this = this;
-	
+
 		_.each(worksList, function(value, i) {
 			$worksTargetNode.append(_this._buildSingleWorkHTML(value, i));
 			_this.allTags.push(value.tags);

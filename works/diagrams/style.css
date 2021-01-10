@@ -3,6 +3,11 @@
   background-color: #dbfff3;
 }
 
+.nda{
+  font-size: 1.3em;
+  margin: 4%;
+}
+
 .node {
   cursor: pointer;
 }
