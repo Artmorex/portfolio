@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 	<link rel="stylesheet/less" href="bower_components/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="styles/resetCSS.css">
 	<link rel="stylesheet" href="styles/main.css">
@@ -14,22 +15,50 @@
 	<link rel="stylesheet" href="styles/image-animations.css">
 </head>
 <body>
-
-	<div class="main-wrapper">
-		
-	    <header class="header">
+	    <header class="header main-wrapper">
 	      	<div class="logo-text">
-		        <p>
-			    	Hello world.
+				<p class="hello">
+					Hello, World! 🌏👋
+				</p>
+				<p>
 			        Here presented some of my practical works which has been done during my studying and growing
-			        as a front-end developer. I'll appreciate any comments to code and feel free to contact me via <a href="#form">form</a>.
-		        </p>
+					as a full-stack web dev.<br>
+					I'll appreciate any comments to code and feel free to contact me via <a href="#form">form</a>:
+				</p>
+				<div id="form">
+					<div class="tractor" id="tractor1"></div>
+					<div class="tractor" id="tractor2"></div>
+				
+					<form id="waterform" method="post">
+				
+						<div class="formgroup" id="name-form">
+							<label for="name">Your name:</label>
+							<input type="text" id="name" name="name" />
+						</div>
+				
+						<div class="formgroup" id="email-form">
+							<label for="email">Your e-mail:</label>
+							<input type="email" id="email" name="email" />
+						</div>
+				
+						<div class="formgroup" id="message-form">
+							<label for="message">Your message:</label>
+							<textarea id="message" name="message"></textarea>
+						</div>
+				
+						<input type="submit" value="Send your message!" />
+					</form>
+				
+				</div>
 	      	</div>
 		    <div class="logo hvr-float">
-				<img class="pic" src="images/coder.png">
+				<a href="https://github.com/ArtemZapp/portfolio"><img class="pic" src="images/coder.png"></a>
 				<p>
-					<a href="https://github.com/ArtemZapp/portfolio">Artem Zhiliaiev</a>
+					<a href="https://github.com/ArtemZapp/portfolio">Artem Zhiliaiev 😉</a>
 				</p>
+				<div>
+					artmorex@gmail.com
+				</div>
 		    </div>
 	    </header>
 
@@ -45,40 +74,7 @@
 			</div> <!-- end works-content -->
 	    </article>  <!-- end works -->
 
-	</div>
-
-	<div class="form-wrapper">
-		<h3 class="title">Send me a message and I will give your answer ASAP</h3>
-		<div id="form">
-			<div class="fish" id="fish"></div>
-			<div class="fish" id="fish2"></div>
-
-			<form id="waterform" method="post">
-
-				<div class="formgroup" id="name-form">
-					<label for="name">Your name*</label>
-					<input type="text" id="name" name="name" />
-				</div>
-
-				<div class="formgroup" id="email-form">
-					<label for="email">Your e-mail*</label>
-					<input type="email" id="email" name="email" />
-				</div>
-
-				<div class="formgroup" id="message-form">
-					<label for="message">Your message</label>
-					<textarea id="message" name="message"></textarea>
-				</div>
-
-				<input type="submit" value="Send your message!" />
-			</form>
-
-		</div>
-	</div>
-
-	<div class="separator separator-buttom"></div>
-
-	<footer>
+	<!-- <footer>
 		<div class="footer-content">
 			<span class="copyright"><i class="fa fa-copyright"></i> 2020 Zhiliaiev Artem</span>
 			<span class="links">
@@ -86,7 +82,7 @@
 				<a href="https://github.com/ArtemZapp/"><i class="fa fa-linkedin-square"></i></a>
 			</span>
 		</div>
-	</footer>
+	</footer> -->
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>

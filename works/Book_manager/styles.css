@@ -1,0 +1,156 @@
+body{
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    color: rgb(51, 51, 51);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: auto;
+    margin-top: 30px;
+}
+
+p{
+    padding: 1rem;
+    float: left;
+    margin: 10px;
+}
+
+h2{
+    display: inline-block;
+}
+
+aside{
+    background-color: wheat;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    border: 4mm ridge rgba(218, 132, 255, 0.6);
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+li:hover{
+    background-color: burlywood;
+    cursor: crosshair;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li h2::before {
+    content: "👉";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+.edit-button {
+    background-color: rgb(87, 87, 87);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.add-button{
+    background-color: rgb(47, 53, 112);
+    border: none;
+    color: white;
+    padding: 25px 35px;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.add-button:hover{
+   background-image: linear-gradient(90deg, #5658c4 0%, #FFCF00 49%, #FC4F4F 80%, #5658c4 100%);
+   animation:slidebg 7s linear infinite;
+   animation-direction: reverse;
+   color: black;
+   cursor: pointer;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.edit-button:hover{
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+   color: black;
+   cursor: pointer;
+}
+
+img{
+    width: 150px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: inherit;
+    margin-right: 10px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.book-categories{
+    background-color: blueviolet;
+    color: whitesmoke;
+    padding: 4px;
+    border-radius: 2px;
+    display: inline;
+    margin: 5px;
+}
+
+.authors{
+    background-color: rgb(88, 56, 117);
+    color: rgb(244, 246, 250);
+    padding: 8px;
+    border-radius: 4px;
+    display: inline;
+    margin: 15px;
+}
+
+.book-preview div{
+    margin: 12px;
+}
+
+.editable{
+    cursor: pointer;
+}

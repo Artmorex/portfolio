@@ -3,41 +3,46 @@ body {
   width: 100%;
 }
 a {
-  text-decoration: none;
   color: #181818;
+  text-decoration: none;
+}
+p {
+  margin: 2% 3% 1% 0;
 }
 .main-wrapper {
-  margin: 0px auto;
   width: 93.75%;
   height: 100%;
   max-width: 960px;
-  font-family: 'Roboto Slab', serif;;
+  font-family: 'Roboto Slab', serif;
   text-decoration: none;
-}
-.header {
   display: flex;
-  margin-top: 15px;
-  margin: 2% 1% 0 1%;
-}
-.header .logo {
-  display: inline-block;
-  line-height: 1.1em;
-  vertical-align: middle;
-  /* font-family: 'Kaushan Script', cursive; */
-  color: #181818;
-  font-size: 1.9em;
-  cursor: pointer;
+  justify-content: center;
+  margin: auto;
 }
 .header{
   display: flex;
   justify-content: space-between;
   font-size: 1.4em;
+  line-height: 1.4em;
+  margin-top: 20px;
+}
+.header .logo {
+  display: inline-block;
   line-height: 1.1em;
+  vertical-align: middle;
+  color: #181818;
+  font-size: 2vw;
+  cursor: pointer;
+}
+.logo-text{
+  width: 100%;
+}
+.works{
+  font-family: 'Roboto Slab', serif;
 }
 .works .works-header {
   padding-bottom: 1%;
   margin: 1%;
-  font-family: Arial, Helvetica, sans-serif;
   color: #666666;
 }
 .works .works-header .title {
@@ -106,7 +111,6 @@ footer .footer-content .copyright {
   float: left;
   font-size: 0.85em;
   line-height: 40px;
-  /* font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif; */
 }
 footer .footer-content .links a {
   float: right;
@@ -140,12 +144,10 @@ footer .footer-content .links a:hover {
 }
 @media screen and (max-width: 768px) {
   .header .logo {
-    float: none;
-    display: block;
-    text-align: center;
+    display: none;
   }
-  .header .about-me {
-    float: none;
+  .header p{
+    font-size: 5vw;
   }
   .works-content .item-wrapper {
     width: 50%;
@@ -162,12 +164,10 @@ footer .footer-content .links a:hover {
     margin: 2%;
   }
   .works .works-header .title {
-    float: none;
     display: inline-block;
     text-align: center;
   }
   .works .works-header .filter {
-    float: none;
     display: inline-block;
   }
   .works-content .item-wrapper {
@@ -203,8 +203,10 @@ footer .footer-content .links a:hover {
 	70% {margin-left: 100%;}
 	100% {margin-left: 100%;}
 }
-.fish{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+.tractor{
+  background-image: url('../images/tractor.png');
+  background-size: 50px;
+  background-repeat: no-repeat;
 	width: 235px;
 	height: 104px;
 	margin-left: -235px;
@@ -216,49 +218,50 @@ footer .footer-content .links a:hover {
 	animation-timing-function: linear;
 	-webkit-animation-timing-function: linear;
 }
-#fish{
-	top: 120px;
+#tractor1{
+	top: 103px;
 }
-#fish2{
-	top: 260px;
+#tractor2{
+	top: 197px;
 	animation-delay: 12s;
 	-webkit-animation-delay: 12s;
 }
 #form{
-	height: 100%;
 	overflow: hidden;
 	position: relative;
 }
 form{
-	margin: 0 auto;
-	width: 500px;
-	padding-top: 40px;
-	position: relative;
+  position: relative;
+  width: 90%;
+  margin: auto;
 }
 label, input, textarea{
 	display: block;	
 }
 input, textarea{
-	width: 500px;	
+	width: 90%;	
 	border: none;
-	border-radius: 20px;
+	border-radius: 15px;
 	outline: none;
-	padding: 10px;
-	/* font-family: 'Sniglet', cursive; */
-	font-size: 1em;
+  padding: 6px;
+  padding-left: 20px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+	font-size: 0.8em;
 	color: #676767;
 	transition: border 0.5s;
 	-webkit-transition: border 0.5s;
 	-moz-transition: border 0.5s;
 	-o-transition: border 0.5s;
-	border: solid 3px #98d4f3;	
+	border: solid 3px rgba(243, 160, 35, 0.719);	
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	
 }
 input:focus, textarea:focus{
-	border: solid 3px #77bde0;	
+  border: solid 3px #f3be9869;
+  padding-left: 20px;
 }
 textarea{
 	height: 100px;	
@@ -270,8 +273,7 @@ input[type="submit"]{
 	color: white;
 	height: 50px;
 	cursor: pointer;
-	margin-top: 30px;
-	font-size: 1.29em;
+	margin-top: 20px;
 	-webkit-transition: background-color 0.5s;
 	-moz-transition: background-color 0.5s;
 	-o-transition: background-color 0.5s;
@@ -282,7 +284,7 @@ input[type="submit"]:hover{
 	
 }
 label{
-	font-size: 1.5em;
+	font-size: 0.9em;
 	margin-top: 20px;
 	padding-left: 20px;
 }
@@ -294,19 +296,20 @@ label{
 	-webkit-transition: background-image 0.7s;
 	-moz-transition: background-image 0.7s;
 	-o-transition: background-image 0.7s;
-	width: 566px;
 	padding-top: 2px;
 }
-.formgroup{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
-}
 .formgroup-active{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+	background-image: url('../images/petr.png');
 }
 .formgroup-error{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+	background-image: url('../images/petr_error.png');
 	color: red;
 }
 .pic{
   width: 100%;
+}
+.hello{
+  color: #F90;
+  font-weight: 600;
+  font-size: 1.4em;
 }

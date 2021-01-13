@@ -64,7 +64,6 @@
 		});
 	};	
 
-
 	Gallery.prototype._buildFilerAndWorkHTML = function ($filterTargetNode, $worksTargetNode, worksList) {
 		var _this = this;
 
