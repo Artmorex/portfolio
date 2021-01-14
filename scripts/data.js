@@ -4,7 +4,7 @@ var data = [
 		title: "Meta Parser",
 		description: "Parse Youtube via YouTube Analytics and Reporting APIs",
 		linkToDemo: "",
-		linkToCode: "",
+		linkToCode: "https://github.com/ArtemZapp/MetaParser",
 		image: "images/works-color/Meta.png",
 		tags: ["API", "Pure JS", "AJAX"]
 	},
@@ -40,7 +40,7 @@ var data = [
 		title: "jsMarathon WebGame",
 		description: "Pokemon WebGame. Serverside multiplayer WebGame",
 		linkToDemo: "",
-		linkToCode: "",
+		linkToCode: "https://github.com/ArtemZapp/jsMarathon",
 		image: "images/works-color/Game.png",
 		tags: ["AJAX", "NodeJS", "Pure JS"]
 	},

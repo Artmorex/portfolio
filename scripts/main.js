@@ -160,3 +160,17 @@ $('document').ready(function () {
 	});
 
 });
+
+$('#waterform').submit(function () {
+	$.post(
+		'send.php', // адрес обработчика
+		$("#waterform").serialize(), // отправляемые данные
+		function (msg) { // получен ответ сервера  
+			$('#waterform').hide('slow');
+			$('#tractor1').hide('slow');
+			$('#tractor2').hide('slow');
+			$('#response').html(msg);
+		}
+	);
+	return false;
+});
