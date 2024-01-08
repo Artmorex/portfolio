@@ -15,9 +15,9 @@ $fio = trim($fio);
 $email = trim($email);
 $message = trim($message);
 
-if (mail("artmorex@artmorex.tech", "Дорогой, тебе пришло письмо с artmorex.tech", "Имя:".$fio.". E-mail: ".$email, "Текст: ".$message)) { 
+if (mail("admin@artmorex.com", "My Dear, myself, you have a new message from artmorex.com", "Имя:".$fio.". E-mail: ".$email, "Текст: ".$message)) { 
 	echo "Your message successfully send!";
 } else {
-	echo "There was an error sending your message! Please contact admin@artmorex.tech or artmorex@gmail.com";
+	echo "There was an error sending your message! Please contact artmorex@gmail.com";
 }
 ?>
