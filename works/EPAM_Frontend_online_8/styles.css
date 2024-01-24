@@ -1,0 +1,102 @@
+html{
+    padding: 0px;
+}
+body{
+    background-color: wheat;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* START: Task 1 Styles */
+table td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 2.5em;
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+}
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+.form{
+    flex-direction: column;
+    margin: 100px;
+}
+.validation{
+    background-color: lightcoral;
+    border: 1px solid black;
+    color: white;
+    visibility: collapse;
+    font-size: 1.2rem;
+    width: 26vw;
+    height: 10vh;
+    margin: 0 20px;
+    padding: 10px 40px;
+}
+.validation.success{
+    background-color: green;
+}
+.input-div{
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+}
+.input-div input[type=text]{
+    width: 25vw;
+    height: 5vh;
+    border: 2px solid red;
+}
+.input-div input[type=text]:focus{
+    outline: none;
+}
+.input-div input[type=submit]{
+    margin-left: 10px;
+    width: 5vw;
+    height: 5vh;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 800px;
+    left: 450px;
+}
+.field{
+    background: url(assets/court.png) 100% 100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 330px;
+    padding: 0ch;
+}
+.ball{
+    background: url(assets/ball.png) 100% 100% no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 145px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    transition:left 1s linear;
+}
+.scoreboard{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+.goal{
+    font-size: 1.5em;
+    visibility: hidden;
+}
+/* END: Task 3 Styles */
