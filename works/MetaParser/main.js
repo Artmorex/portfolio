@@ -457,15 +457,15 @@ function top_post(post_num){
 	document.getElementById('top_post_table').innerHTML = `
 	    <table class="table_sort">
 							<thead><tr>
-								<th>Тип и фото</th>
-								<th>Время поста</th>
-								<th>Сообщение</th>
-								<th>Число отображений на экранах</th>
-								<th>Число людей, нажавших где-либо на публикации</th>
-								<th>Общее количество реакций</th>
-								<th>Лайки</th>
-								<th>Комментарии</th>
-								<th>Репосты</th>
+								<th>Type</th>
+								<th>Date posted</th>
+								<th>Message</th>
+								<th>Times watched</th>
+								<th>Total clicks</th>
+								<th>Total reactions</th>
+								<th>Likes</th>
+								<th>Comments</th>
+								<th>Reposts</th>
 							</thead></tr>
 							<tbody id="feed">
 
@@ -706,13 +706,15 @@ function top_post_vk(vk_post_num){
 	document.getElementById('top_post_vk_table').innerHTML = `
 	    <table class="table_sort">
 							<thead><tr>
-								<th>Тип и фото</th>
-								<th>Время поста</th>
-								<th>Сообщение</th>
-								<th>Число отображений на экранах</th>
-								<th>Лайки</th>
-								<th>Комментарии</th>
-								<th>Репосты</th>
+								<th>Type</th>
+								<th>Date posted</th>
+								<th>Message</th>
+								<th>Times watched</th>
+								<th>Total clicks</th>
+								<th>Total reactions</th>
+								<th>Likes</th>
+								<th>Comments</th>
+								<th>Reposts</th>
 							</thead></tr>
 							<tbody id="vk_feed">
 
@@ -890,7 +892,7 @@ if(if_token_worked.hasOwnProperty("error")){
 	};
 };
 
-loadJSON('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCnunjdwy-UtYxFLJAHtBqDw&maxResults=5&pageToken=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro&key=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro',
+loadJSON('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=TrioMandili&maxResults=5&pageToken=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro&key=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro',
     function(data) { 
 
      	var youtube_all_views = data.items[0].statistics.viewCount;
@@ -961,16 +963,16 @@ function top_post_youtube(youtube_video_num, order_type){
 	document.getElementById('top_video_youtube').innerHTML = `
 	    <table class="table_sort">
 							<thead><tr>
-								<th>Превью</th>
-								<th>Время создания</th>
-								<th>Название</th>
-								<th>Просмотров</th>
-								<th>Лайков</th>
-								<th>Дизлайков</th>
-								<th>Комментариев</th>
-								<th>Поделились</th>
-								<th>Общее время просмотров</th>
-								<th>Среднее время просмотра</th>
+								<th>Preview</th>
+								<th>Created date</th>
+								<th>Name</th>
+								<th>Views</th>
+								<th>Likes</th>
+								<th>Dislikes</th>
+								<th>Comments</th>
+								<th>Sharings</th>
+								<th>Total views time</th>
+								<th>Avarage view time</th>
 							</thead></tr>
 							<tbody id="youtube_video">
 
@@ -1111,16 +1113,16 @@ function top_post_youtube_2(youtube_video_num, order_type){
 	document.getElementById('top_video_youtube').innerHTML = `
 	    <table class="table_sort">
 							<thead><tr>
-								<th>Превью</th>
-								<th>Время создания</th>
-								<th>Название</th>
-								<th>Просмотров</th>
-								<th>Лайков</th>
-								<th>Дизлайков</th>
-								<th>Комментариев</th>
-								<th>Поделились</th>
-								<th>Общее время просмотров</th>
-								<th>Среднее время просмотра</th>
+							<th>Preview</th>
+							<th>Created date</th>
+							<th>Name</th>
+							<th>Views</th>
+							<th>Likes</th>
+							<th>Dislikes</th>
+							<th>Comments</th>
+							<th>Sharings</th>
+							<th>Total views time</th>
+							<th>Avarage view time</th>
 							</thead></tr>
 							<tbody id="youtube_video">
 
@@ -1190,7 +1192,7 @@ function top_post_youtube_2(youtube_video_num, order_type){
 	var youtube_end_date = today;
 	var youtube_params= 'dimensions=video&endDate='+ youtube_end_date;
 	
-	loadJSON('https://www.googleapis.com/youtube/v3/search?part=id%2C%20snippet&channelId=UCnunjdwy-UtYxFLJAHtBqDw&order='+order_type+'&maxResults='+youtube_video_num+'&pageToken=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro&key=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro',
+	loadJSON('https://www.googleapis.com/youtube/v3/search?part=id%2C%20snippet&channelId=TrioMandili&order='+order_type+'&maxResults='+youtube_video_num+'&pageToken=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro&key=AIzaSyDliCuU37EuUgxuZ5ErJXNfwWglqbbK4ro',
 		function(data) {
 
 			for (let i = 0; i < youtube_video_num; i++) {
