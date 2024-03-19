@@ -15,27 +15,24 @@
     </head>
     <body>
     <div class="container">
-			<header class="clearfix"><h1>MetaParser</h1></header>
+			<header class="clearfix"><h1>MetaParser <span>v 3.0</span></h1></header>
 			<section>
 
-				<form action="javascript:;" onsubmit="post_channel_info(this.channel_id.value)" class="form-channel-input">
-					<label for="channel_id">Works with youtube channel id or channel name</label><br>
-					<input type="text" id="channel_id" name="channel_id" value="NatGeo"><br>
-					<input type="submit" value="Submit" class="button-89" role="button">
-				</form>
-
-				<button type="button" class="collapsible" id="channel_button"><h1 id="youtube_channel_title"></h1></button>
+				<button type="button" class="collapsible"><h1>Joma Tech</h1></button>
 				<div class="content">
-					<hr>
+					<button type="button" class="collapsible_head"><h3>Channel info</h3></button>
+					<div class="content">
+					<h2>Youtube</h2>
+					<hr>https://www.youtube.com/@jomakaze
 					<br>Total number of videos:<p id="youtube_all_videos"></p>
 					Total number of views: <p id="youtube_all_views"></p>
 					Total number of subs: <p id="youtube_all_subs"></p>
-					Description: <p id="youtube_desc"></p>
-					Country: <img id="country" src="not_found.png">
 					<hr>
+					</div>
 
-					<button type="button" class="collapsible_head"><h3>TOP Video Youtube</h3></button>
+					<button type="button" class="collapsible_head"><h3>TOP</h3></button>
 					<div class="content">
+						<h3>TOP Video Youtube</h3>
 							<button onclick="clicktable_youtube(5)" class="btn">5</button>
 						    <button onclick="clicktable_youtube(10)" class="btn">10</button>
 						    <button onclick="clicktable_youtube(30)" class="btn">30</button>

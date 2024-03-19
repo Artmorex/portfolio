@@ -6,7 +6,7 @@ var data = [
 		linkToDemo: "/works/MetaParser",
 		linkToCode: "https://github.com/ArtemZapp/MetaParser",
 		image: "images/works-color/Meta.png",
-		tags: ["API", "Pure JS", "AJAX"]
+		tags: ["REST API", "Pure JS", "AJAX"]
 	},
 	{
 		id: 2,

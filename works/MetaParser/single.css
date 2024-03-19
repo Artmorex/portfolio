@@ -7,12 +7,18 @@
     clear: both;
 }
 body{
-  font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-family: 'Roboto', sans-serif;
   background: url(https://html5book.ru/wp-content/uploads/2015/07/background46.png) repeat top left;
   font-weight: 400;
   font-size: 15px;
   color: #333;
 margin:0;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
 }
 a{
   color: #555;
@@ -24,7 +30,13 @@ a{
   min-height: 750px;
 }
 
-section{margin-bottom:50px}
+section{
+  margin-bottom:50px; 
+  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .clr{
   clear: both;
   padding: 0;
@@ -51,6 +63,7 @@ section{margin-bottom:50px}
 }
 .container > header h1{
   font-size: 40px;
+  font-family: 'Roboto', sans-serif;
   line-height: 40px;
   margin: 0;
   position: relative;
@@ -82,7 +95,7 @@ section{margin-bottom:50px}
   padding: 10px 0;
   background: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-text-align:center;
+  text-align:center;
   position: relative;
   font-family: Cambria, Georgia, serif;
   box-shadow: 1px 0 2px rgba(0,0,0,0.3);
@@ -101,7 +114,7 @@ text-align:center;
   padding: 5px 0px;
 }
 .demo a{
-    display: inline-block;
+  display: inline-block;
   margin: 0px 4px;
   padding: 0px 6px;
   color: #aaa;
@@ -223,4 +236,73 @@ text-align:center;
   color: white;
   background: #846868;
   padding: 16px;
+}
+
+#channel_button {
+  display: none;
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px;
+  /* border thickness */
+  --s: .45em;
+  /* size of the corner */
+  --color: #373B44;
+
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 18px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.form-channel-input {
+  margin-bottom: 2em;
+  width: 50%;
+  position: relative;
+  padding: 15px 0 0;
+}
+
+.form-channel-input label {
+  margin-bottom: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#channel_id {
+  padding: 20px;
+  width: 50%;
+  margin-bottom: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #333;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
 }
