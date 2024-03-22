@@ -30,7 +30,7 @@ var data = [
 		id: 4,
 		title: "Calendar",
 		description: "Calendar, EPAM University Programm",
-		linkToDemo: "/works/calendar",
+		linkToDemo: "/works/Calendar",
 		linkToCode: "https://github.com/ArtemZapp/calendar",
 		image: "images/works-color/Calendar.png",
 		tags: ["Pure HTML/CSS", "Grid/Flex"]
@@ -75,7 +75,7 @@ var data = [
 		id: 9,
 		title: "Navigation Manager",
 		description: "Navigation Manager",
-		linkToDemo: "/works/Navigation_Manager",
+		linkToDemo: "/works/Navigation_manager",
 		linkToCode: "https://github.com/ArtemZapp/jsNavigation_Manager",
 		image: "images/works-color/Nav.png",
 		tags: ["Pure JS", "Pure HTML/CSS"]
