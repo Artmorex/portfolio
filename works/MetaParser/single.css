@@ -178,6 +178,7 @@ section{
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+  width: 100%;
 }
 
 /*simple button--------------------------------------*/
@@ -301,14 +302,17 @@ section{
   font-size: 20px;
   color: #333;
   border-radius: 0.2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(210, 209, 209);
   border: none;
-  border-bottom: 0.3rem solid transparent;
+  border-bottom: 0.1rem solid black;
   transition: all 0.3s;
 }
 
 #top_video_youtube{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+
+#top_video_youtube table {
+  display: block;
+  overflow-x: auto;
 }
