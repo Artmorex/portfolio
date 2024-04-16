@@ -310,6 +310,9 @@ section{
 
 #top_video_youtube{
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #top_video_youtube table {

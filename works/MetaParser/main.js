@@ -209,7 +209,7 @@ async function top_post_youtube(youtube_video_num, order_type){
 			for (let i = 0; i < data.items.length; i++) {
 				let element = data.items[i];
 
-				var youtube_video_id = element.id.videoId;
+				var youtube_video_id = element.id;
 				var youtube_viewCount = element.statistics.viewCount;
 				var youtube_likeCount = element.statistics.likeCount;
 				var youtube_commentCount = element.statistics.commentCount;
@@ -231,6 +231,7 @@ async function top_post_youtube(youtube_video_num, order_type){
 				var youtube_title = element.snippet.title;
 				var youtube_a = document.getElementById("youtube_video_link_" + i);
 				youtube_a.innerHTML = youtube_title;
+				console.log(youtube_video_id)
 				youtube_a.href = 'https://www.youtube.com/watch?v=' + youtube_video_id;
 				youtube_a.target = "_blank";
 
